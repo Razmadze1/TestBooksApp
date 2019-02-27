@@ -1,0 +1,15 @@
+<h1 class="text-center details">Details</h1>
+<div class="detail-wrap">
+  <div class="detail-header">
+      <span title="{{book?.volumeInfo?.title}}">{{book?.volumeInfo?.title}}</span>
+  </div>
+  <div class="left">
+      <div class="thumbnail" [style.backgroundImage]="'url('+ book?.volumeInfo?.imageLinks?.thumbnail +')'"></div>
+    <p> Authors: {{book?.volumeInfo?.authors}} </p>
+    <p> Categories: {{book?.volumeInfo?.categories}} </p>
+  </div>
+  <div class="right">
+    {{book?.volumeInfo?.description}}
+  </div>
+  <div class="clearfix"></div>
+</div>

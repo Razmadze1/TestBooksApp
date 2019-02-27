@@ -1,0 +1,25 @@
+<div class="wrap">
+    <div class="book-card-wrap">
+        <div class="book-card" *ngFor="let book of books; let i= index;">
+            <div class="book-card-header">
+                <span title="{{book?.volumeInfo?.title}}">{{book?.volumeInfo?.title}}</span>
+            </div>
+            <div class="book-card-body"
+                title="{{book?.volumeInfo?.description}}">
+                <div class="thumbnail" [style.backgroundImage]="'url('+ book?.volumeInfo?.imageLinks?.thumbnail +')'">
+                </div>
+                {{book?.volumeInfo?.description | slice:0:120}}
+                {{book?.volumeInfo?.description?.length > 120 ? '...' : ''}}
+            </div>
+            <div class="book-card-footer">
+                <div class="heart">
+                    <span (click)="checkAsFav(book)" ngClass="{{isFav(book?.id) ? 'heart-is-fav' : 'heart-not-fav'}}"></span>
+                </div>
+                <div>
+                    <button class="primary-btn" [routerLink]="['details',
+                        book?.id]">Readmore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

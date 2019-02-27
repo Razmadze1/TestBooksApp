@@ -1,0 +1,76 @@
+.wrap {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+
+    table {
+        margin: 0 auto;
+    }
+
+    .book-card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+        max-height: 450px;
+    }
+
+    .book-card-wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+
+    .book-card-header {
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 5px;
+        background: #ddd;
+
+        span {
+            display: inline-block;
+            width: 200px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+
+    .book-card-body {
+        height: 330px;
+    }
+
+    .heart {
+        span {
+            cursor: pointer;
+            position: absolute;
+            height: 80px;
+            width: 92px;
+            margin-top: -85px;
+            margin-left: -48px;
+            background-position: -105px;
+            background-size: 100px;
+        }
+    }
+
+    .heart-is-fav {
+        background-image: url('../../../assets/images/heart.png');
+    }
+
+    .heart-not-fav {
+        background-image: url('../../../assets/images/grayHeart.png');
+    }
+    
+    .book-card-footer {
+        button {
+            font-size: 16px;
+            padding: 10px 5px;
+        }
+    }
+
+    .thumbnail {
+        width:130px;
+        height: 170px;
+        margin: 10px auto;
+        background-repeat: no-repeat;
+    }
+}

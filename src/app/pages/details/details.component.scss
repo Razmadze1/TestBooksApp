@@ -1,0 +1,34 @@
+.detail-wrap {
+    border: 1px solid #ddd;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    .detail-header {
+        background: #f1f1f1;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .left {
+        float: left;
+        width: 38%;
+        border-right: 1px solid #ddd;
+        padding: 10px;
+    }
+    
+    .right {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+
+    .thumbnail {
+        width:130px;
+        height: 170px;
+        margin: 10px auto;
+        background-repeat: no-repeat;
+    }
+}
+
